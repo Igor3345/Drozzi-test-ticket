@@ -1,0 +1,164 @@
+section
+    .top_section 
+        img.top_section__background(src="./images/top_section.jpg" alt="background")
+        .container
+            .top_section__buttons
+                .top_section__buttons-delimetr
+                    .top_section__down-anchor
+                        a.js-to-anchor(href="#portfolio_section")
+                            svg 
+                                use(xlink:href="images/sprite_build.svg#arrow_down_anchor")
+                    .top_section__social
+                        a.top_section__soc(href="javascript:void(0)")
+                            svg
+                                use(xlink:href="images/sprite_build.svg#watsup_icon")
+                            span whatsapp
+                        a.top_section__soc(href="javascript:void(0)")
+                            svg
+                                use(xlink:href="images/sprite_build.svg#telegramm_icon")
+                            span telegram 
+    .portfolio_section#portfolio_section
+        .container 
+            .title_block
+                h2 Портфолио
+                a(href="javascript:void(0)")
+                    |смотреть все
+                    svg
+                        use(xlink:href="images/sprite_build.svg#link_arrow")
+
+            .portfolio_section__items
+                .portfolio_section__item
+                    a.portfolio_section__item-link(href="javascript:void(0)")
+                    .portfolio_section__photo-frame 
+                        .portfolio_section__tags
+                            a(href="javascript:void(0)") маркетинг
+                    h4 «Натали» — Ивановский трикотаж оптом
+                    span.portfolio_section__subtitle Редизайн сайта, поддержка сайта
+                .portfolio_section__item
+                    a.portfolio_section__item-link(href="javascript:void(0)")
+                    .portfolio_section__photo-frame 
+                        .portfolio_section__tags
+                            a(href="javascript:void(0)") ВЕБ РАЗРАБОТКА
+                    h4 Podium — эротический массаж
+                    span.portfolio_section__subtitle Разработка, редизайн
+                .portfolio_section__item
+                    a.portfolio_section__item-link(href="javascript:void(0)")
+                    .portfolio_section__photo-frame 
+                        .portfolio_section__tags
+                            a(href="javascript:void(0)") ВЕДЕНИЕ РЕКЛАМНОЙ КОМПАНИИ
+                    h4 Аудит отдела маркетинга и продаж для Название бренда длинное название...
+                    span.portfolio_section__subtitle Аудит, маркетинг сюда кратко теги
+                .portfolio_section__item
+                    a.portfolio_section__item-link(href="javascript:void(0)")
+                    .portfolio_section__photo-frame 
+                        .portfolio_section__tags
+                            a(href="javascript:void(0)") ВЕДЕНИЕ РЕКЛАМНОЙ КОМПАНИИ
+                    h4 Аудит отдела маркетинга и продаж для Название бренда
+                    span.portfolio_section__subtitle Аудит, маркетинг сюда кратко теги
+                .portfolio_section__item
+                    a.portfolio_section__item-link(href="javascript:void(0)")
+                    .portfolio_section__photo-frame 
+                        .portfolio_section__tags
+                            a(href="javascript:void(0)") ОПТИМИЗАЦИЯ SEO САЙТА
+                    h4 Аудит отдела маркетинга и продаж для Название бренда
+                    span.portfolio_section__subtitle Аудит, маркетинг сюда кратко теги
+                .portfolio_section__item
+                    a.portfolio_section__item-link(href="javascript:void(0)")
+                    .portfolio_section__photo-frame 
+                        .portfolio_section__tags
+                            a(href="javascript:void(0)") СОЗДАНИЕ РЕКЛАМНОЙ КОМПАНИИ
+                    h4 Аудит отдела маркетинга и продаж для Название бренда
+                    span.portfolio_section__subtitle Аудит, маркетинг сюда кратко теги
+            
+            .portfolio_section__all
+                a(href="javascript:void(0)") Все кейсы
+
+    .about_section#about_section
+        .container
+            .title_block
+                h2 О компании
+            .about_section__counters 
+                .about_section__counter
+                    span.about_section__counter-num 5
+                    span.about_section__counter-option отделов
+                .about_section__counter
+                    span.about_section__counter-num 5
+                    span.about_section__counter-option маркетологов
+                .about_section__counter
+                    span.about_section__counter-num 3
+                    span.about_section__counter-option дизайнера
+                .about_section__counter
+                    span.about_section__counter-num 3
+                    span.about_section__counter-option копирайтера
+                .about_section__counter
+                    span.about_section__counter-num 7
+                    span.about_section__counter-option разработчиков
+
+            .about_section__description 
+                .row 
+                    .col-lg-6.col-12 
+                        .about_section__info
+                            p Мы — команда специалистов с опытом, энтузиазмом и лёгким недосыпом. Маркетинговое агентство «Дрожжи» было основано 
+                                |в 2015 году, как компания, где можно получить комплексное интернет- и oффлайн-продвижение. На сегодняшний день мы не зависим ни от ниши, ни от географии, ни от специфики продукта. 
+                                |В портфолио компании сотни успешных кейсов, способных помочь вам в реализации своей идеи.
+
+                            .about_section__statistics
+                                .about_section__stat
+                                    span.about_section__stat-num 1000+
+                                    span.about_section__stat-text реализованных проектов
+                                .about_section__stat
+                                    span.about_section__stat-num 92
+                                    span.about_section__stat-text клиента доверили нам свои проекты
+                                .about_section__stat
+                                    span.about_section__stat-num 5+
+                                    span.about_section__stat-text лет успешной работы
+                            a.about_section__button(href="javascript:void(0)") подробнее
+
+                    .col-lg-6.col-12
+                        .about_section__image 
+                            a.gallery.js-mp-image(href="images/image.jpg")
+                                img.img-fluid(src="images/image.jpg")
+                            span.about_section__image-title Команда агентства «Дрожжи»
+            
+    form.form_section.js-form_section#form_section
+        .container
+            .title_block
+                h2 Оставьте заявку
+            .form_section__content.row 
+                .col-lg-4.col-12
+                    .form_section__person
+                        img.form_section__photo(src="./images/photo.jpg", alt="photo")
+                        span.form_section__name Юлия Дижа
+                        span.form_section__position Поможет запустить ваш проект
+
+                .offset-lg-1.col-lg-5.col-12
+
+                    .form_section__form
+                        .form_section__form-input.js-main_form-input
+                            label(for="form_input1") Ваше имя *
+                            input#form_input1(type="text")
+                        .form_section__form-input.js-main_form-input
+                            label(for="form_input2") Телефон или мессенджер *
+                            input#form_input2(type="text")
+                        .form_section__form-input.js-main_form-textarea
+                            label(for="form_input3") Краткое описание задачи *
+                            textarea#form_input3
+
+            .row.form_section__bottom
+                .col-lg-4.col-12
+                    .form_section__download
+                        h4 Скачать брифинги на:
+                        a.form_section__download-link(href="javascript:void(0)" download) 
+                            |разработку логотипа
+                            svg
+                                use(xlink:href="images/sprite_build.svg#link_arrow")
+                        a.form_section__download-link(href="javascript:void(0)" download) 
+                            |разработку сайта
+                            svg
+                                use(xlink:href="images/sprite_build.svg#link_arrow")
+                        a.form_section__download-link(href="javascript:void(0)" download) 
+                            |разработку лендинга
+                            svg
+                                use(xlink:href="images/sprite_build.svg#link_arrow")
+                .offset-lg-1.col-lg-5.col-12
+                    button.form_section__button(type="submit") Отправить

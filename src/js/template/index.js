@@ -27,6 +27,7 @@ import {map} from "./modules/common/map";
 import {toast} from "./modules/common/toast";
 import {burger_menu} from "./modules/burger_menu";
 import {main_form} from "./modules/main_form";
+import {runNums} from "./modules/runNums";
 // import {mobileMenu} from './modules/mobileMenu';
 // import {megaMenu} from './modules/megaMenu';
 
@@ -62,6 +63,7 @@ indiBlockController.add(map, ".js-map");
 indiBlockController.add(toast, ".js-toast");
 indiBlockController.add(burger_menu, ".js-header-burger");
 indiBlockController.add(main_form, ".js-form_section");
+indiBlockController.add(runNums, ".js-runNums");
 //
 // Блоки проекта
 //

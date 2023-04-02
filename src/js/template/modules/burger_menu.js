@@ -11,8 +11,19 @@ export const burger_menu = () => {
         header.classList.toggle('--opened');
     }
 
-    window.onscroll = () => {
+    window.onresize = () =>{
+        if(header.clientWidth > 767){
+            close_burger();
+        }
+    }
 
+    function close_burger(){
+        button.classList.remove('--opened');
+        header_nav.classList.remove('--opened');
+        header.classList.remove('--opened');
+    }
+
+    window.onscroll = () => {
         if(window.scrollY > 95){
             header.classList.add('--fixed');
         }else{

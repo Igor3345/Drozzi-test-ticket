@@ -1,7 +1,9 @@
 section
     .top_section 
-        img.top_section__background(src="./images/top_section.jpg" alt="background")
-        .container
+        .container.top_section__container
+            img.top_section__background(src="./images/top_section.jpg" alt="background")
+            span.top_section__title Маркетинговое агентство. 
+                    | С нами вы растете как на дрожжах
             .top_section__buttons
                 .top_section__buttons-delimetr
                     .top_section__down-anchor
@@ -11,7 +13,7 @@ section
                     .top_section__social
                         a.top_section__soc(href="javascript:void(0)")
                             svg
-                                use(xlink:href="images/sprite_build.svg#watsup_icon")
+                                use(href="images/sprite_build.svg#watsup_icon")
                             span whatsapp
                         a.top_section__soc(href="javascript:void(0)")
                             svg
@@ -29,42 +31,48 @@ section
             .portfolio_section__items
                 .portfolio_section__item
                     a.portfolio_section__item-link(href="javascript:void(0)")
-                    .portfolio_section__photo-frame 
+                    .portfolio_section__photo-frame
+                        img.portfolio_section__photo-image(src="./images/card1.jpg" alt="")
                         .portfolio_section__tags
                             a(href="javascript:void(0)") маркетинг
                     h4 «Натали» — Ивановский трикотаж оптом
                     span.portfolio_section__subtitle Редизайн сайта, поддержка сайта
                 .portfolio_section__item
                     a.portfolio_section__item-link(href="javascript:void(0)")
-                    .portfolio_section__photo-frame 
+                    .portfolio_section__photo-frame
+                        img.portfolio_section__photo-image(src="./images/card2.jpg" alt="")
                         .portfolio_section__tags
                             a(href="javascript:void(0)") ВЕБ РАЗРАБОТКА
                     h4 Podium — эротический массаж
                     span.portfolio_section__subtitle Разработка, редизайн
                 .portfolio_section__item
                     a.portfolio_section__item-link(href="javascript:void(0)")
-                    .portfolio_section__photo-frame 
+                    .portfolio_section__photo-frame
+                        img.portfolio_section__photo-image(src="./images/card3.jpg" alt="")
                         .portfolio_section__tags
                             a(href="javascript:void(0)") ВЕДЕНИЕ РЕКЛАМНОЙ КОМПАНИИ
                     h4 Аудит отдела маркетинга и продаж для Название бренда длинное название...
                     span.portfolio_section__subtitle Аудит, маркетинг сюда кратко теги
                 .portfolio_section__item
                     a.portfolio_section__item-link(href="javascript:void(0)")
-                    .portfolio_section__photo-frame 
+                    .portfolio_section__photo-frame
+                        img.portfolio_section__photo-image(src="./images/card4.jpg" alt="")
                         .portfolio_section__tags
                             a(href="javascript:void(0)") ВЕДЕНИЕ РЕКЛАМНОЙ КОМПАНИИ
                     h4 Аудит отдела маркетинга и продаж для Название бренда
                     span.portfolio_section__subtitle Аудит, маркетинг сюда кратко теги
                 .portfolio_section__item
                     a.portfolio_section__item-link(href="javascript:void(0)")
-                    .portfolio_section__photo-frame 
+                    .portfolio_section__photo-frame
+                        img.portfolio_section__photo-image(src="./images/card5.jpg" alt="")
                         .portfolio_section__tags
                             a(href="javascript:void(0)") ОПТИМИЗАЦИЯ SEO САЙТА
                     h4 Аудит отдела маркетинга и продаж для Название бренда
                     span.portfolio_section__subtitle Аудит, маркетинг сюда кратко теги
                 .portfolio_section__item
                     a.portfolio_section__item-link(href="javascript:void(0)")
-                    .portfolio_section__photo-frame 
+                    .portfolio_section__photo-frame
+                        img.portfolio_section__photo-image(src="./images/card6.jpg" alt="")
                         .portfolio_section__tags
                             a(href="javascript:void(0)") СОЗДАНИЕ РЕКЛАМНОЙ КОМПАНИИ
                     h4 Аудит отдела маркетинга и продаж для Название бренда
@@ -79,22 +87,22 @@ section
                 h2 О компании
             .about_section__counters 
                 .about_section__counter
-                    span.about_section__counter-num 5
+                    span.about_section__counter-num.js-run_number(data-start="0" data-end="5" data-step="1" data-plus="")
                     span.about_section__counter-option отделов
                 .about_section__counter
-                    span.about_section__counter-num 5
+                    span.about_section__counter-num.js-run_number(data-start="0" data-end="5" data-step="1" data-plus="")
                     span.about_section__counter-option маркетологов
                 .about_section__counter
-                    span.about_section__counter-num 3
+                    span.about_section__counter-num.js-run_number(data-start="0" data-end="3" data-step="1" data-plus="")
                     span.about_section__counter-option дизайнера
                 .about_section__counter
-                    span.about_section__counter-num 3
+                    span.about_section__counter-num.js-run_number(data-start="0" data-end="3" data-step="1" data-plus="") 
                     span.about_section__counter-option копирайтера
                 .about_section__counter
-                    span.about_section__counter-num 7
+                    span.about_section__counter-num.js-run_number(data-start="0" data-end="7" data-step="1" data-plus="")
                     span.about_section__counter-option разработчиков
 
-            .about_section__description 
+            .about_section__description.js-runNums 
                 .row 
                     .col-lg-6.col-12 
                         .about_section__info
@@ -104,13 +112,13 @@ section
 
                             .about_section__statistics
                                 .about_section__stat
-                                    span.about_section__stat-num 1000+
+                                    span.about_section__stat-num.js-run_number(data-start="0" data-end="1000" data-step="1" data-plus="true")
                                     span.about_section__stat-text реализованных проектов
                                 .about_section__stat
-                                    span.about_section__stat-num 92
+                                    span.about_section__stat-num.js-run_number(data-start="0" data-end="92" data-step="1" data-plus="")
                                     span.about_section__stat-text клиента доверили нам свои проекты
                                 .about_section__stat
-                                    span.about_section__stat-num 5+
+                                    span.about_section__stat-num.js-run_number(data-start="0" data-end="5" data-step="1" data-plus="true")
                                     span.about_section__stat-text лет успешной работы
                             a.about_section__button(href="javascript:void(0)") подробнее
 
@@ -131,18 +139,18 @@ section
                         span.form_section__name Юлия Дижа
                         span.form_section__position Поможет запустить ваш проект
 
-                .offset-lg-1.col-lg-5.col-12
+                .col-lg-8.col-12
 
                     .form_section__form
-                        .form_section__form-input.js-main_form-input
+                        .form-floating.form_section__form-input.form_section__form--input.js-main_form-input         
+                            input#form_input1.form-control(type="text")
                             label(for="form_input1") Ваше имя *
-                            input#form_input1(type="text")
-                        .form_section__form-input.js-main_form-input
+                        .form-floating.form_section__form-input.form_section__form--input.js-main_form-input
+                            input#form_input2.form-control(type="text")
                             label(for="form_input2") Телефон или мессенджер *
-                            input#form_input2(type="text")
-                        .form_section__form-input.js-main_form-textarea
+                        .form-floating.form_section__form-input.js-main_form-textarea
+                            textarea#form_input3.form-control
                             label(for="form_input3") Краткое описание задачи *
-                            textarea#form_input3
 
             .row.form_section__bottom
                 .col-lg-4.col-12
@@ -160,5 +168,5 @@ section
                             |разработку лендинга
                             svg
                                 use(xlink:href="images/sprite_build.svg#link_arrow")
-                .offset-lg-1.col-lg-5.col-12
+                .col-lg-5.col-12
                     button.form_section__button(type="submit") Отправить
